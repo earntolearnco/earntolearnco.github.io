@@ -522,3 +522,16 @@ h2 {
         padding-right: 15px; /* Increase right padding for better alignment */
     }
 }
+
+/* Ensure section titles are above the content on narrow screens */
+@media (max-width: 600px) {
+    .about-us h2,
+    .featured-services h2,
+    .payment-methods h2,
+    .testimonials h2,
+    .cta h2 {
+        text-align: center; /* Center align titles */
+        margin-bottom: 12px; /* Add space below the title */
+        padding-right: 0; /* Remove right padding for narrow screens */
+    }
+}
