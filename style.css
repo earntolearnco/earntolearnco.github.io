@@ -523,15 +523,17 @@ h2 {
     }
 }
 
-/* Ensure section titles are above the content on narrow screens */
+/* Force section titles to be on top and centered for narrow screens */
 @media (max-width: 600px) {
     .about-us h2,
     .featured-services h2,
     .payment-methods h2,
     .testimonials h2,
     .cta h2 {
-        text-align: center; /* Center align titles */
-        margin-bottom: 12px; /* Add space below the title */
-        padding-right: 0; /* Remove right padding for narrow screens */
+        display: block; /* Ensure titles are treated as block elements */
+        width: 100%; /* Make sure titles span full width */
+        text-align: center; /* Center-align titles */
+        margin: 0 auto 12px auto; /* Center with space below */
+        padding-right: 0; /* Remove right padding */
     }
 }
