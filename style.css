@@ -845,3 +845,19 @@ h2 {
         display: flex; /* Show only on mobile devices */
     }
 }
+
+/* Hide hamburger menu on larger screens */
+.hamburger {
+    display: none;
+}
+
+/* Show hamburger menu only on mobile devices and justify it to the right */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+        position: absolute;
+        right: 20px; /* Align to the right side of the header */
+        top: 20px;
+        z-index: 10; /* Ensure it doesn't cover other content */
+    }
+}
