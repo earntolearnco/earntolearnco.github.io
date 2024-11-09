@@ -253,3 +253,34 @@ footer p {
         margin-bottom: 8px;
     }
 }
+
+/* Keep menu items to the right of the logo */
+header .container {
+    flex-direction: row; /* Ensure header layout is row */
+    align-items: center; /* Align items vertically */
+}
+
+@media (max-width: 768px) {
+    header .container {
+        justify-content: space-between; /* Ensure logo and menu stay apart */
+        flex-direction: row; /* Maintain row layout */
+    }
+
+    nav ul {
+        flex-direction: row; /* Keep menu items in a row */
+        align-items: center; /* Center align menu items */
+        justify-content: flex-end; /* Align menu to the right */
+    }
+}
+
+@media (max-width: 600px) {
+    header .container {
+        flex-direction: column; /* Stack items vertically for very narrow screens */
+        align-items: center; /* Center items */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack menu items */
+        align-items: center; /* Center menu items */
+    }
+}
