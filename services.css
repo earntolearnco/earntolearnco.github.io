@@ -198,3 +198,24 @@ footer p {
         font-size: 16px;
     }
 }
+
+/* Ensure buttons and layout are responsive on smaller screens */
+@media (max-width: 600px) {
+    .services-grid {
+        grid-template-columns: 1fr; /* Stack service items vertically */
+    }
+
+    .service-item .btn {
+        display: block;
+        margin: 0 auto; /* Center the button */
+        width: fit-content;
+    }
+
+    .hero h2, .services h2 {
+        font-size: 24px; /* Reduce size for smaller screens */
+    }
+
+    .hero p, .services p {
+        font-size: 16px; /* Adjust paragraph size */
+    }
+}
