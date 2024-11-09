@@ -297,3 +297,18 @@ footer p {
         margin: 10px 0;
     }
 }
+
+/* Ensure the hamburger menu is aligned with the header items */
+.hamburger {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    margin-left: auto; /* Push the hamburger to the right */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
