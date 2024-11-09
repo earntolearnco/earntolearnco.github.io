@@ -834,3 +834,14 @@ h2 {
 .hero .btn:hover {
     background-color: #ccc;
 }
+
+/* Hide hamburger menu on larger screens */
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex; /* Show only on mobile devices */
+    }
+}

@@ -312,3 +312,14 @@ footer p {
     justify-content: space-between;
     align-items: center;
 }
+
+/* Hide hamburger menu on larger screens */
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex; /* Show only on mobile devices */
+    }
+}
