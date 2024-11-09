@@ -630,3 +630,14 @@ h2 {
         margin-top: 60px; /* Ensure the nav starts below the header */
     }
 }
+
+/* Hide hamburger menu on larger screens */
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex; /* Show only on mobile devices */
+    }
+}
