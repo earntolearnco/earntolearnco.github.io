@@ -1,3 +1,19 @@
+/* --- Global Styles --- */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
 
 /* Header Section */
 header {
@@ -48,27 +64,159 @@ nav ul li a:hover {
     color: #ccc;
 }
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.hero {
+    background-image: url('https://images.pexels.com/photos/1422286/pexels-photo-1422286.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    margin-top: 80px; /* Space for fixed header */
 }
 
-nav ul {
-    display: flex;
-    list-style-type: none;
+.hero-content {
+    max-width: 700px;
+    margin: 0 auto;
 }
 
-nav ul li {
-    margin-left: 20px;
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
-nav ul li a {
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.hero .btn {
+    padding: 12px 30px;
+    font-size: 18px;
+    background-color: #fff;
+    color: #000;
     text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #ccc;
+}
+
+/* --- Services Page Specific Styles --- */
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.services p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Service Item */
+.service-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;                 /* Enable flexbox layout */
+    flex-direction: column;        /* Arrange children in a vertical column */
+    justify-content: space-between; /* Space out the elements evenly */
+    height: 100%;                  /* Ensure each item takes full available height */
+    text-align: center;            /* Center text and button */
+}
+
+/* Button Style for Each Service */
+.service-item .btn {
+    padding: 12px 30px;
+    font-size: 18px;
+    background-color: #000;
     color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;              /* Space between text and button */
+    align-self: center;            /* Center the button within its container */
+}
+
+/* Hover Effect for Service Items */
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Footer Section --- */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
     font-size: 16px;
-    text-transform: uppercase;
-    transition: color 0.3s ease;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr; /* Stack items vertically on small screens */
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
+
+/* Ensure buttons and layout are responsive on smaller screens */
+@media (max-width: 600px) {
+    .services-grid {
+        grid-template-columns: 1fr; /* Stack service items vertically */
+    }
+
+    .service-item .btn {
+        display: block;
+        margin: 0 auto; /* Center the button */
+        width: fit-content;
+    }
+
+    .hero h2, .services h2 {
+        font-size: 24px; /* Reduce size for smaller screens */
+    }
+
+    .hero p, .services p {
+        font-size: 16px; /* Adjust paragraph size */
+    }
 }
 
 /* Responsive adjustments for header */
@@ -103,5 +251,49 @@ nav ul li a {
 
     nav ul li {
         margin-bottom: 8px;
+    }
+}
+
+/* Hamburger menu button */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        background-color: #000;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Adjust based on header height */
+        left: 0;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
     }
 }
