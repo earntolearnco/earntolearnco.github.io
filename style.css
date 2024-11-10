@@ -67,7 +67,7 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
     position: relative;
-    background: url('https://images.pexels.com/photos/1422286/pexels-photo-1422286.jpeg') no-repeat center center/cover;
+    background: url('images/indexbg.jpeg') no-repeat center center/cover;
     color: #fff;
     height: 100vh;
     display: flex;
