@@ -1,19 +1,15 @@
-/* --- Global Styles --- */
-
-/* Basic Reset */
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styles */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #fff;
     color: #333;
 }
-
 
 /* Header Section */
 header {
@@ -35,12 +31,12 @@ header {
     font-size: 24px;
     font-weight: 600;
     display: flex;
-    align-items: center; /* Aligns the image and text vertically */
+    align-items: center;
 }
 
 .logo-img {
-    max-width: 50px; /* Set a size for the logo image */
-    margin-right: 20px; /* Space between the image and text */
+    max-width: 50px;
+    margin-right: 20px;
 }
 
 nav ul {
@@ -63,6 +59,9 @@ nav ul li a {
 nav ul li a:hover {
     color: #ccc;
 }
+
+/* Additional original styles and media queries from services.css */
+
 
 .hero {
     background-image: url('https://images.pexels.com/photos/1422286/pexels-photo-1422286.jpeg');

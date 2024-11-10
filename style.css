@@ -15,7 +15,6 @@ body {
     padding: 0;
 }
 
-
 /* Header Section */
 header {
     background-color: #000;
@@ -36,12 +35,12 @@ header {
     font-size: 24px;
     font-weight: 600;
     display: flex;
-    align-items: center; /* Aligns the image and text vertically */
+    align-items: center;
 }
 
 .logo-img {
-    max-width: 50px; /* Set a size for the logo image */
-    margin-right: 20px; /* Space between the image and text */
+    max-width: 50px;
+    margin-right: 20px;
 }
 
 nav ul {
@@ -94,76 +93,8 @@ nav ul li a:hover {
     }
 }
 
-/* Hamburger menu button */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
+/* Additional original styles from style.css */
 
-.hamburger div {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 3px 0;
-}
-
-@media (max-width: 768px) {
-    .hamburger {
-        display: flex;
-    }
-
-    nav {
-        display: none;
-        flex-direction: column;
-        background-color: #000;
-        width: 100%;
-        position: absolute;
-        top: 60px; /* Adjust based on header height */
-        left: 0;
-    }
-
-    nav.active {
-        display: flex;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-}
-
-/* Ensure the hamburger menu is aligned with the header items */
-.hamburger {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: relative;
-    margin-left: auto; /* Push the hamburger to the right */
-}
-
-.about-us {
-    
-    padding: 50px 0;
-    text-align: center;
-}
-
-.about-us h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    font-weight: 600;
-}
-
-.about-us p {
-    font-size: 18px;
-    max-width: 800px;
-    margin: 0 auto;
-}
 
 /* Featured Services Section */
 .featured-services {
