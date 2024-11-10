@@ -190,3 +190,31 @@ footer p {
         margin-bottom: 8px;
     }
 }
+
+/* Initially, the email link won't look like a hyperlink */
+.email-link {
+    text-decoration: none;  /* Remove underline */
+    color: inherit;         /* Inherit the text color from the parent */
+  }
+  
+  /* On hover, make it look like a typical hyperlink */
+  .email-link:hover {
+    color: #000000;  /* Change to any color you want for the hover effect */
+    text-decoration: underline;  /* Add underline on hover */
+  }
+
+  /* Initially, the email and phone links won't look like a hyperlink */
+.email-phone-link {
+    text-decoration: none;  /* Remove underline */
+    color: inherit;         /* Inherit the text color from the parent */
+  }
+  
+  /* On hover, make it look like a typical hyperlink */
+  .email-phone-link:hover {
+    color: #000000;  /* Change to any color you want for the hover effect */
+    text-decoration: underline;  /* Add underline on hover */
+  }
+  
+  
+  
+  
