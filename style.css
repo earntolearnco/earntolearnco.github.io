@@ -64,15 +64,25 @@ nav ul li a:hover {
     color: #ccc;
 }
 
-/* Ensure the menu remains visible and stacks vertically on mobile */
+/* Main Section Styles */
+.main-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Responsive adjustments for mobile */
 @media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
     nav {
         display: block; /* Ensure nav is always displayed */
-        width: 100%; /* Adjust width for visibility */
+        width: 100%; /* Full width for visibility */
     }
 
     nav ul {
-        display: flex;
         flex-direction: column;
         align-items: center;
         padding: 10px 0;
@@ -83,7 +93,6 @@ nav ul li a:hover {
         margin-bottom: 10px;
     }
 }
-
 
 @media (max-width: 600px) {
     .logo {
