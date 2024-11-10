@@ -446,6 +446,21 @@ img {
     height: auto;
 }
 
+/* Responsive adjustments for stacking menu on mobile */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
 /* Responsive navigation improvements */
 nav {
     display: flex;

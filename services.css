@@ -178,6 +178,20 @@ footer p {
     font-size: 16px;
 }
 
+/* Responsive adjustments for stacking menu on mobile */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
 /* --- Responsive Adjustments --- */
 @media (max-width: 768px) {
     .container {
