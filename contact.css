@@ -63,20 +63,19 @@ nav ul li a:hover {
     color: #ccc;
 }
 
-
 /* --- Contact Section --- */
 .contact {
     display: flex;
     flex-direction: column;
-    justify-content: center;  /* Vertically center the content */
-    align-items: center;  /* Horizontally center the content */
+    justify-content: center; /* Vertically center the content */
+    align-items: center; /* Horizontally center the content */
     padding: 60px 20px;
     background-color: #f4f4f4;
-    height: 100vh;  /* Ensure full height to vertically center the sections */
+    height: 100vh; /* Ensure full height to vertically center the sections */
 }
 
 .contact-text {
-    text-align: center;  /* Center the text */
+    text-align: center; /* Center the text */
     margin-bottom: 40px;
 }
 
@@ -89,13 +88,13 @@ nav ul li a:hover {
 .contact-text p {
     font-size: 18px;
     line-height: 1.6;
-    max-width: 600px;  /* Limit width of the paragraph */
+    max-width: 600px; /* Limit width of the paragraph */
     margin: 0 auto;
 }
 
 /* Other Ways to Reach Us Section (Boxed) */
 .contact-details {
-    width: 400px;  /* Box size for this section */
+    width: 400px; /* Box size for this section */
     background-color: #fff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -147,6 +146,20 @@ footer p {
 @media (max-width: 768px) {
     .container {
         width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        display: flex; /* Ensure the nav remains visible */
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
     }
 
     .contact h2 {
@@ -160,13 +173,20 @@ footer p {
     .contact-details {
         margin-top: 30px;
         padding: 20px;
+        width: 300px; /* Adjust box size for smaller screens */
     }
 
     .contact-details h3 {
         font-size: 24px;
     }
+}
 
-    .contact-details {
-        width: 300px;  /* Adjust square size for smaller screens */
+@media (max-width: 600px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    nav ul li {
+        margin-bottom: 8px;
     }
 }
