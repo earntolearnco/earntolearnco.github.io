@@ -64,20 +64,10 @@ nav ul li a:hover {
     color: #ccc;
 }
 
-/* Main Section Styles */
-.main-section {
-    padding: 40px 20px;
-    text-align: center;
-}
-
 /* Responsive adjustments for stacking menu on mobile */
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
     nav ul {
+        display: flex;
         flex-direction: column;
         align-items: center;
         padding: 10px 0;
