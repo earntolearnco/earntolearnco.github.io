@@ -64,8 +64,13 @@ nav ul li a:hover {
     color: #ccc;
 }
 
-/* Responsive adjustments for stacking menu on mobile */
+/* Ensure the menu remains visible and stacks vertically on mobile */
 @media (max-width: 768px) {
+    nav {
+        display: block; /* Ensure nav is always displayed */
+        width: 100%; /* Adjust width for visibility */
+    }
+
     nav ul {
         display: flex;
         flex-direction: column;
@@ -78,6 +83,7 @@ nav ul li a:hover {
         margin-bottom: 10px;
     }
 }
+
 
 @media (max-width: 600px) {
     .logo {
