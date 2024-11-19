@@ -67,7 +67,7 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
     position: relative;
-    background: url('images/Smoke2.png') no-repeat center center/cover;
+    background: url('images/smoke.png') no-repeat center center/cover;
     color: #fff;
     height: 100vh;
     display: flex;
